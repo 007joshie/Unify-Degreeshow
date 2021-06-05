@@ -213,10 +213,11 @@ p {
 }
 
 #preload {
-    display: none;
     background: url(../images/eden-hover.png);
     background: url(../images/ezra-hover.png);
     background: url(../images/jasmine-hover.png);
+    background: url(../images/josh-hover.png);
+    background: url(../images/salma-hover.png);
 }
 
 
