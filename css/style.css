@@ -330,6 +330,10 @@ aside.profile-bar+main {
         display: none;
     }
 
+    .content {
+        width: 90%;
+    }
+
     main {
         width: 100vw;
     }
@@ -380,7 +384,7 @@ aside.profile-bar+main {
 
     .profile-content {
         width: 90vw;
-        padding: 10px;
+        padding: 5vw;
     }
 
 }
