@@ -345,7 +345,7 @@ aside.profile-bar+main {
     .menu-mobile {
         display: block;
         margin: 0;
-        width: 100%;
+        width: 100vw;
         height: auto;
         padding-bottom: 1em;
         text-decoration: none;
@@ -359,6 +359,10 @@ aside.profile-bar+main {
         margin: 0 auto;
         list-style-type: none;
         padding-top: 1em;
+    }
+
+    .menu-mobile ul li {
+        padding-top: 10px;
     }
 
     h1 {
@@ -377,7 +381,6 @@ aside.profile-bar+main {
     .profile-content {
         width: 90vw;
         padding: 10px;
-        padding-top: 5em;
     }
 
 }
