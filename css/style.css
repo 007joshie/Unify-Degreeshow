@@ -212,7 +212,7 @@ p {
     width: 100%;
 }
 
-#preload {
+#preload::after {
     background: url(../images/eden-hover.png);
     background: url(../images/ezra-hover.png);
     background: url(../images/jasmine-hover.png);
