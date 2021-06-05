@@ -40,6 +40,10 @@ a:visited {
     color: var(--off-white);
 }
 
+.profile-cell a {
+    opacity: 1;
+}
+
 body {
     margin: 0;
     padding: 0;
