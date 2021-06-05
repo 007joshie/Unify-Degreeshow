@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body style="background: black;background-image: url(../images/background.svg);">
+  <div id="preload"></div>
+  
+    <main>
+    <div class="content">
+      <h1>STUDENTS</h1>
+      <div class="profile-cell" id="eden" data-tilt data-tilt-scale="1.1"><img src="../images/eden.png" alt=""></div>
+      <div class="profile-cell" id="ezra" data-tilt data-tilt-scale="1.1"><img src="../images/ezra.png" alt=""></div>
+      <div class="profile-cell" id="jasmine" data-tilt data-tilt-scale="1.1"><img src="../images/jasmine.png" alt=""></div>
+      <div class="profile-cell" id="josh" data-tilt data-tilt-scale="1.1"><img src="../images/josh.png" alt=""></div>
+      <div class="profile-cell" id="salma" data-tilt data-tilt-scale="1.1"><img src="../images/salma.png" alt=""></div>
+    </div>
+  </main>
+
+
+  <aside>
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="students.html">STUDENTS</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="">CONTACT</a></li>
+    </ul>
+
+    <ul class="branding">
+      <li>
+        <img src="assets/Group 375.svg" alt="">
+      </li>
+    </ul>
+  </aside>
+
+  <script type="text/javascript" src="../js/vanilla-tilt.min.js"></script>
+
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".profile-cell"), {
+      max: 15,
+      speed: 400,
+    });
+    
+  </script>
+</body>
+
+</html>
