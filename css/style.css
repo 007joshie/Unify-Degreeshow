@@ -12,6 +12,30 @@ a:link {
     text-decoration: none;
 }
 
+/* unvisited link */
+a:link {
+    color: #FFF;
+    opacity: 0.6;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #FFF;
+    opacity: 0.6;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FFF;
+    opacity: 1;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #FFF;
+    opacity: 0.8;
+  }
+
 a:visited {
     color: var(--off-white);
 }
