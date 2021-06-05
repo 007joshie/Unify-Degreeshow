@@ -32,7 +32,7 @@ main {
 
 aside {
     width: 22%;
-    min-width: 220px;
+    min-width: 260px;
     max-width: 450px;
     height: 300vh;
     background: rgb(24 24 24 / 77%);
@@ -159,8 +159,7 @@ p {
 .cell {
     display: inline-block;
     width: calc((100% / 3) - 6%);
-    min-width: 200px;
-    margin: auto;
+    margin: 0 auto;
     user-select: none;
     padding-left: 2%;
     padding-right: 2%;
@@ -193,45 +192,45 @@ p {
 }
 
 
-#eden:hover{
+#eden:hover {
     background: no-repeat url(../images/eden-hover.png) 100% / 100%;
 }
 
-#eden:hover > img {
+#eden:hover>img {
     opacity: 0;
 }
 
 
-#ezra:hover{
+#ezra:hover {
     background: no-repeat url(../images/ezra-hover.png) 100% / 100%;
 }
 
-#ezra:hover > img {
+#ezra:hover>img {
     opacity: 0;
 }
 
-#jasmine:hover{
+#jasmine:hover {
     background: no-repeat url(../images/jasmine-hover.png) 100% / 100%;
 }
 
-#jasmine:hover > img {
+#jasmine:hover>img {
     opacity: 0;
 }
 
-#josh:hover{
+#josh:hover {
     background: no-repeat url(../images/josh-hover.png) 100% / 100%;
 }
 
-#josh:hover > img {
+#josh:hover>img {
     opacity: 0;
 }
 
-#salma:hover{
+#salma:hover {
     opacity: 1;
     background: no-repeat url(../images/salma-hover.png) 100% / 100%;
 }
 
-#salma:hover > a >img {
+#salma:hover>a>img {
     opacity: 0;
 }
 
@@ -263,7 +262,7 @@ p {
 h1.first-name {
     margin-bottom: 0;
     padding-top: 0.3em;
-    padding-bottom: 0; 
+    padding-bottom: 0;
 }
 
 h1.last-name {
@@ -294,7 +293,7 @@ h1.last-name {
 
 }
 
-.profile-bar ul li a{
+.profile-bar ul li a {
     margin-top: 2em;
 }
 
@@ -302,7 +301,7 @@ h1.last-name {
     font-weight: bold;
 }
 
-p + h2 {
+p+h2 {
     margin-top: 3em;
 }
 
@@ -313,6 +312,72 @@ iframe {
 }
 
 
-aside.profile-bar + main{
+
+aside.profile-bar+main {
     width: 52%;
+}
+
+@media only screen and (min-width: 600px) {
+    .menu-mobile {
+        display: none;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .cell {
+        display: inline-block;
+        width: calc((90% / 2));
+        margin: 0 auto;
+        user-select: none;
+        margin: 0 auto;
+    }
+
+    .menu-mobile {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1em;
+        text-decoration: none;
+        background-color: #000;
+    }
+
+    .menu-mobile ul {
+        list-style-type: none;
+        font-family: 'AKira', sans-serif;
+        display: table;
+        margin: 0 auto;
+        list-style-type: none;
+        padding-top: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .profile-cell {
+        display: inline-block;
+        width: calc((100% / 2) - 6%);
+        max-width: 600px;
+        margin: 2% 2%;
+        user-select: none;
+        min-width: 100px;
+    }
+
+    .profile-content {
+        width: 90vw;
+        padding: 10px;
+        padding-top: 5em;
+    }
+
 }
