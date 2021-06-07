@@ -13,7 +13,7 @@
 </head>
 
 <body style="background: black;background-image: url(images/background.svg);">
-    
+
     <main>
         <div class="menu-mobile">
             <ul>
@@ -23,9 +23,12 @@
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
-        <img src="images/hero.svg" alt="" class="hero">
+        
+        
+        <!-- <img src="images/hero.svg" alt="" class="hero"> -->
 
         <div class="content">
+            <div id="lottie"></div>
             <h1>Intro</h1>
             <p>
                 This site showcases in a virtual exhibition the projects created by the final year Bachelor of Design
@@ -59,13 +62,36 @@
             <li><a href="">CONTACT</a></li>
         </ul>
 
-        <ul class="branding">
-            <li>
+        <div style="position: relative; 
+            width: 100%; 
+            height: 60vh; ">
+
+            <div style="position: absolute; 
+                bottom: 0; 
+                left: calc(30%);
+                display block;
+                width: 40%;
+                min-height: 340px;
+                max-width: 160px;
+                margin: 0 auto; 
+                height: 50%; ">
                 <img src="images/sidebar.svg" class="sidebar-logo" alt="">
-            </li>
-        </ul>
+            </div>
+        </div>
+
     </aside>
 
+    <script src="js/lottie.js"></script>
+    <script>
+        var svgContainer = document.getElementById('lottie');
+       lottie.loadAnimation({
+  container: svgContainer, // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'https://assets3.lottiefiles.com/packages/lf20_uqknrcl6.json' // the path to the animation json
+});
+    </script>
 
 </body>
 

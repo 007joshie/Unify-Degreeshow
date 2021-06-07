@@ -5,7 +5,8 @@
 
 :root {
     --off-white: #FFF;
-
+    --colour-schema-foreground: rgba(249,184,23,0.33);
+    --colour-schema-outline: #F9B817;
 }
 
 a:link {
@@ -340,7 +341,27 @@ iframe {
 
 }
 
+button {
+    width: 100%;
+    background-color: var(--colour-schema-foreground);
+    border-color: var(--colour-schema-outline);
+    border-radius: 1000px;
+    border-width: 4px;
+    padding: 0.25em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
 
+.sidebar-logo{
+    width: 80%;
+}
+
+#lottie {
+    padding-top: 3%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
 aside.profile-bar+main {
     width: 52%;
@@ -349,6 +370,10 @@ aside.profile-bar+main {
 @media only screen and (min-width: 600px) {
     .menu-mobile {
         display: none;
+    }
+
+    #lottie {
+        min-height: 400px;
     }
 
 }
@@ -365,6 +390,10 @@ aside.profile-bar+main {
 
     main {
         width: 100vw;
+    }
+
+    #lottie {
+        min-height: 100px;
     }
 
     .cell {
