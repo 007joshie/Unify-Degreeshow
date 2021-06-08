@@ -22,7 +22,6 @@ a:link {
   /* visited link */
   a:visited {
     color: #FFF;
-    opacity: 0.6;
   }
   
   /* mouse over link */
@@ -34,7 +33,6 @@ a:link {
   /* selected link */
   a:active {
     color: #FFF;
-    opacity: 0.8;
   }
 
 a:visited {
@@ -84,7 +82,6 @@ aside ul li {
     letter-spacing: 1px;
     font-weight: 700;
     margin-bottom: 0.8em;
-    opacity: 0.6;
 }
 
 aside ul li:hover {
@@ -138,7 +135,11 @@ p > span {
 }
 
 .active {
-    opacity: 1 !important;
+    opacity: 0.8 !important;
+}
+
+.active:hover {
+    opacity: 1;
 }
 
 
