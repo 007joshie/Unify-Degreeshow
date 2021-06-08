@@ -9,6 +9,10 @@
     --colour-schema-outline: #F9B817;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -53,7 +57,7 @@ main {
     display: block;
     width: 78%;
     /* margin: 0 auto; */
-    height: 300vh;
+    height: auto;
     background: none;
 }
 
@@ -86,6 +90,38 @@ aside ul li {
 
 aside ul li:hover {
     opacity: 1;
+}
+
+.footer {
+    margin-top: 15em;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #231F20;
+    overflow-x: hidden;
+}
+
+.white-text{
+    text-align: center;
+    margin-right: 30%;
+    opacity: 0.6;
+}
+
+.white-text p {
+    opacity: 0.6;
+}
+
+.white-text h2 {
+    font-family: 'Akira', sans-serif;
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.footer img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
 }
 
 

@@ -20,7 +20,7 @@
                 <li class="active"><a href="#">HOME</a></li>
                 <li><a href="pages/students.html">STUDENTS</a></li>
                 <li><a href="pages/projects.html">PROJECTS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a data-scroll href="#footer">CONTACT</a></li>
             </ul>
         </div>
         
@@ -50,15 +50,37 @@
                 <br> <br> For more information about the exhibition contact <span>degreeshow@waikato.ac.nz</span>
             </p>
         </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="images/UoW-white.png" alt="">
+            </div>
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+            </span>
+        </div>
     </main>
 
 
     <aside>
         <ul>
-            <li><a href="">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="pages/students.html">STUDENTS</a></li>
             <li><a href="pages/projects.html">PROJECTS</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a data-scroll href="#footer">CONTACT</a></li>
         </ul>
 
         <div style="position: relative; 
@@ -68,7 +90,7 @@
             <div style="position: absolute; 
                 bottom: 0; 
                 left: 40%;
-                display block;
+                display: block;
                 width: 40%;
                 min-height: 340px;
                 max-width: 160px;
@@ -91,6 +113,11 @@
   path: 'https://assets3.lottiefiles.com/packages/lf20_uqknrcl6.json' // the path to the animation json
 });
     </script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 
 </html>

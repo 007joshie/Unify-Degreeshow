@@ -22,7 +22,7 @@
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="students.html">STUDENTS</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a data-scroll href="#footer">CONTACT</a></li>
             </ul>
         </div>  
     <div class="content">
@@ -33,6 +33,27 @@
       <div class="profile-cell" id="josh" data-tilt data-tilt-scale="1.1"><img src="../images/josh.png" alt=""></div>
       <div class="profile-cell" id="salma" data-tilt data-tilt-scale="1.1"><a href="profile-salma.html"><img src="../images/salma.png" alt=""></a></div>
     </div>
+    <div class="footer" id="footer">
+      <div class="content-label">
+          <br><br><br><br>
+          <img src="../images/UoW-white.png" alt="">
+      </div>
+      <span class="white-text">
+          <h2>For more information contact us</h2>
+          <p>
+              Email: &nbsp;
+              <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+          </p>
+          <p>
+              Faculty phone: &nbsp;
+              <a href="tel:0800924528">0800 924 528</a>
+          </p>
+          <p>
+              Faculty information: &nbsp;
+              <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+          </p>
+      </span>
+  </div>
   </main>
 
 
@@ -41,7 +62,7 @@
       <li><a href="../index.html">HOME</a></li>
       <li><a href="students.html" class="active">STUDENTS</a></li>
       <li><a href="projects.html">PROJECTS</a></li>
-      <li><a href="">CONTACT</a></li>
+      <li><a data-scroll href="#footer">CONTACT</a></li>
     </ul>
 
     <div style="position: relative; 
@@ -51,7 +72,7 @@
             <div style="position: absolute; 
                 bottom: 0; 
                 left: 40%;
-                display block;
+                display: block;
                 width: 40%;
                 min-height: 340px;
                 max-width: 160px;
@@ -62,6 +83,8 @@
         </div>
   </aside>
 
+  
+
   <script type="text/javascript" src="../js/vanilla-tilt.min.js"></script>
 
   <script type="text/javascript">
@@ -71,6 +94,11 @@
     });
     
   </script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 
 </html>
