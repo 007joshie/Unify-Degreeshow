@@ -112,15 +112,24 @@ aside ul li:hover {
 }
 
 .white-text h2 {
-    font-family: 'Akira', sans-serif;
-    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     opacity: 0.6;
 }
 
+.inactive {
+    filter: grayscale();
+}
+
+.video-wrapper {
+    position: relative;
+padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+}
 .footer img {
     width: 150px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 1em;
     opacity: 0.6;
 }
 
@@ -388,8 +397,36 @@ p+h2 {
 
 iframe {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.project {
+    width: 100%;
+    border-top: #FFF solid 1px;
+    padding-top: 1em;
+    margin-top: 4em;
+}
+
+.project-photo {
+    display: block;
+}
+
+.project p, .project h2{
+    text-transform: uppercase !important;
+    opacity: 0.8;
+}
+
+.project h2 {
+    font-family: 'Akira';
+}
+
+.project-photo img{
+    height: 150px;
+    float: left;
+    margin-right: 2em;
 }
 
 button {
@@ -425,6 +462,10 @@ aside.profile-bar+main {
 
     #lottie {
         min-height: 400px;
+    }
+
+    .page-profile {
+        margin-left: -50% !important;
     }
 
 }
@@ -494,6 +535,40 @@ aside.profile-bar+main {
     .profile-content {
         width: 90vw;
         padding: 5vw;
+    }
+
+    .footer {
+        margin-top: 5em;
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        background-color: #231F20;
+        overflow-x: hidden;
+    }
+    
+    .white-text{
+        text-align: center;
+        margin-right: 30%;
+        opacity: 0.6;
+    }
+
+    .content-label img{
+        width: 100px;
+    }
+    
+    .white-text p {
+        opacity: 0.6;
+        font-size: 14px;
+    }
+    
+    .white-text h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        opacity: 0.6;
+    }
+
+    .page-profile {
+        margin-left: 0;
     }
 
 }
