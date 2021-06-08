@@ -363,14 +363,6 @@ button {
     margin: 0 auto;
 }
 
-.bg {
-    z-index: -100;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-image: url(images/background.svg) repeat-y;
-}
-
 aside.profile-bar+main {
     width: 52%;
 }
