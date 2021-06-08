@@ -127,6 +127,20 @@ h1 {
     font-size: 3em;
 }
 
+p > a {
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+p > span {
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
 
 .projects-selector {
     display: block;
