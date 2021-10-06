@@ -90,7 +90,7 @@ aside ul li {
     color: var(--off-white);
     font-size: 1.8em;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 0.7em;
 }
 
@@ -464,13 +464,14 @@ iframe {
 }
 
 button {
-    width: 100%;
-    background-color: var(--colour-schema-foreground);
-    border-color: var(--colour-schema-outline);
+    width: auto;
+    background-color: rgba(0 0 0 / 0);
     border-radius: 1000px;
-    border-width: 4px;
-    padding: 0.25em;
+    border: none;
+    padding: 0.5em;
     font-family: 'Montserrat', sans-serif;
+    text-transform: lowercase;
+    font-weight: 500;
     font-size: 18px;
 }
 
