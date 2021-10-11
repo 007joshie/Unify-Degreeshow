@@ -131,7 +131,7 @@ aside ul li:hover {
     width: 100%;
     height: auto;
     min-height: 100px;
-    background-color: #231F20;
+    background-color: #141213;
     overflow-x: hidden;
 }
 
@@ -441,7 +441,6 @@ iframe {
     width: 100%;
     border-top: #FFF solid 1px;
     padding-top: 1em;
-    margin-top: 4em;
 }
 
 .project-photo {
@@ -449,16 +448,19 @@ iframe {
 }
 
 .project p, .project h2{
-    text-transform: uppercase !important;
     opacity: 0.8;
 }
 
 .project h2 {
-    font-family: 'Akira';
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2em;
+
+    font-weight: 400;
 }
 
 .project-photo img{
-    height: 150px;
+    height: 180px;
     float: left;
     margin-right: 2em;
 }
@@ -502,6 +504,15 @@ aside.profile-bar+main {
 
     .page-profile {
         margin-left: -50% !important;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .project-photo img {
+        width: 100% !important;
+        height: auto;
+        padding-bottom: 1em;
     }
 
 }
@@ -610,4 +621,8 @@ aside.profile-bar+main {
         margin-left: 0;
     }
 
+}
+
+.footer span.white-text p {
+    line-height: 0.8em;;
 }
