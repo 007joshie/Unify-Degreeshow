@@ -8,6 +8,7 @@
     --colour-schema-foreground: rgba(249,184,23,0.33);
     --colour-schema-outline: #F9B817;
     --unify-black: #231F20;
+    --accent-color:#F9B817;
 }
 
 body {
@@ -480,12 +481,12 @@ button {
     text-transform: lowercase;
     font-weight:800;
     font-size: 18px;
-    border: solid 2px #F9B817;
+    border: solid 2px var(--accent-color);
 
 }
 
 button:hover {
-    background-color: #F9B817;
+    background-color: var(--accent-color);
 }
 
 button:hover a {
@@ -643,9 +644,9 @@ aside.profile-bar+main {
 }
 
 .footer span.white-text p {
-    line-height: 0.8em;;
+    line-height: 0.8em;
 }
 
 .footer span.white-text p a:hover {
-    color: red;
+    color: var(--accent-color);
 }
