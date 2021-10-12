@@ -444,22 +444,30 @@ iframe {
 .project {
     width: 100%;
     padding-top: 1.5em;
+    
 }
+
+
 
 .project-photo {
     display: block;
+    transition: all 0.2s ease;
 }
 
-.project p, .project h2{
+.project p, .project h2, .project-photo{
     opacity: 0.8;
+    transition: all 0.2s ease;
 }
 
 .project h2 {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 2em;
-
     font-weight: 400;
+}
+
+.project:hover h2,.project:hover p, .project:hover .project-photo{
+    opacity: 1 !important;
 }
 
 .project-photo img{
