@@ -63,6 +63,7 @@ main {
     margin-left: calc( 17vw - 5px);
     height: auto;
     background: var(--unify-black);
+    background-size: contain;
     background-image: url(../images/background-01.svg);
 }
 
@@ -134,7 +135,7 @@ aside ul li:hover {
     width: 100%;
     height: auto;
     min-height: 100px;
-    background-color: #141213;
+    background-color: none;
     overflow-x: hidden;
 }
 
@@ -620,7 +621,6 @@ aside.profile-bar+main {
         width: 100%;
         height: auto;
         min-height: 100px;
-        background-color: #141213;
         overflow-x: hidden;
     }
     
