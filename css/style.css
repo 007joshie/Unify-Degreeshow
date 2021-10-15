@@ -23,7 +23,7 @@ a:link {
 /* unvisited link */
 a:link {
     color: #FFF;
-    opacity: 0.6;
+    opacity:1;
   }
   
   /* visited link */
@@ -345,47 +345,6 @@ p {
 }
 
 
-#eden:hover {
-    background: no-repeat url(../images/eden-hover.png) 100% / 100%;
-}
-
-#eden:hover>img {
-    opacity: 0;
-}
-
-
-#ezra:hover {
-    background: no-repeat url(../images/ezra-hover.png) 100% / 100%;
-}
-
-#ezra:hover>img {
-    opacity: 0;
-}
-
-#jasmine:hover {
-    background: no-repeat url(../images/jasmine-hover.png) 100% / 100%;
-}
-
-#jasmine:hover>img {
-    opacity: 0;
-}
-
-#josh:hover {
-    background: no-repeat url(../images/josh-hover.png) 100% / 100%;
-}
-
-#josh:hover>img {
-    opacity: 0;
-}
-
-#salma:hover {
-    opacity: 1;
-    background: no-repeat url(../images/salma-hover.png) 100% / 100%;
-}
-
-#salma:hover>a>img {
-    opacity: 0;
-}
 
 
 
@@ -479,7 +438,7 @@ iframe {
 }
 
 .project p, .project h2, .project-photo{
-    opacity: 0.8;
+    opacity: 1;
     transition: all 0.2s ease;
 }
 
