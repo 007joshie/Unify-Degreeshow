@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <img src="../images/salma.png" alt="">
+
+                <h1 id="full-name" data-letter="F">Ezra Vette</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                    <li>Minor in <span>Marketing</span></li>
+                </ul>
+                <button><a href="https://ezravette.myportfolio.com">Portfolio Link</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hi, I am Ezra Vette and will soon graduate with a Bachelor of Design majoring in communication design and
+                marketing. I have had a passion for design and all things creative from a very young age and the
+                University of Waikato has been the perfect place to help me expand on this.
+            </p>
+
+            <p>
+                Throughout school I always knew I wanted to pursue a career in a creative field, so when I discovered
+                the design degree at the University of Waikato, I knew it was the right path for me. Waikato has pushed
+                me to evolve and learn new skills in many areas and disciplines. It has also allowed me to build off of
+                my passion for painting and illustration and learn how to use those skills to amplify my projects. I
+                have found my strongest areas of interest to be print design and branding.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>FYOUTURE is an organization created to help the next generation of designers to decide who to design for. Through the campaign “Design your FYOUTURE” the next generation will be provided the skills and knowledge to go forward confidently in their design journeys.
+                Many large corporations use design to greenwash, FYOUTURE aims to give the power back to the young designers and assist them with making decisions with who to design for. The central piece of the campaign is three large interactive displays, which will appear at design shows and tertiary design events. These displays highlight that design is not always as it seems and that it can be used to hide the truth.
+                The displays are supplemented with a brochure for students to take away and refer back to so they can find the links for more information. As well as this, the displays are promoted on social media, allowing students to connect with the campaign if they are unable to attend an event. The social media site will also link to resources on ethical companies, tips on questions to ask future employers and what to consider when looking for a design job.
+            </p>
+
+            <h2>Design Your FYOUTURE</h2>
+
+            <img src="../images/posters/e_vette_1080.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+                        <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

@@ -201,7 +201,6 @@ h2 {
     color: white;
     font-size: 2em;
     letter-spacing: 1.5px;
-    text-transform: lowercase;
 }
 
 h1 {
@@ -312,6 +311,30 @@ p {
 .profile-cell img {
     width: 100%;
 }
+.profile-bar td {
+    position: relative;
+}
+
+.img-container { position: relative; }
+
+.img-container .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bottom{
+    opacity: 0;
+  }
+
+.img-container .top:hover {
+    opacity: 0;
+  }
+
+  .img-container .top:hover ~ .bottom {
+    opacity: 1;
+  }
 
 #preload::after {
     background: url(../images/eden-hover.png);
@@ -384,7 +407,7 @@ p {
     padding-left: 0;
 }
 
-h1.first-name {
+h1#full-name {
     margin-bottom: 0;
     padding-top: 0.3em;
     padding-bottom: 0;
