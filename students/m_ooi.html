@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="N">Megan Ooi</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                    <li>Minor in <span>Marketing</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hihi! My name is Megan and I will be graduating soon with a Bachelor of Design, majoring in Communication
+                Design and Marketing. Despite being pushed to become a doctor or lawyer, I insisted on pursuing the
+                design field and here I am now.
+            </p>
+
+            <p>
+                Initially, my dream was to become a fashion designer and this has been with me ever since childhood. In
+                fact, I still carry that dream with me. However, I started gaining interest in graphic design after
+                seeing the attractive work created by some of my graphic designer friends and it made me think that
+                maybe I should take this field into consideration. My determination became stronger after realising that
+                everything in this world eventually involves design. Hence, I started my graphic design journey at The
+                University of Waikato while studying marketing alongside. At the start, I was intimidated by everything
+                and everyone because I felt that I didn’t have the aptitude for drawing. But as time passed, I found
+                myself becoming more confident to share my work as I learned that design is not only limited to drawing.
+                This showed how much I have improved as a designer as I am proud to own my work. In the past 3 years, I
+                have picked up many essential skills such as coding, motion graphics, UX design, etc that I had never
+                expected myself to learn as a graphic designer because my original concept of graphic design was limited
+                to branding and print. I’m happy that I was given the opportunity to learn such a broad range of skills
+                and software because this broadens my future job employment scope. Thanks to my lecturers, tutors, and
+                peers, studying here at Waikato helped me develop a sharper pair of eyes and I now have a keener sense
+                of what makes a design more effective. Throughout my design journey, I found myself enjoying projects
+                related to branding, motion graphics, and UX design.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>
+                Many people tend to overestimate themselves by over-ordering and leaving leftovers in restaurants. This
+                contributes to more than 24,000 tonnes of food waste being generated annually by New Zealand restaurants
+                and cafes. From that amount, 61% of the food waste is avoidable as it includes edible food. It may not
+                be visible to everyone but in fact many New Zealanders are living with food insecurity. This percentage
+                has increased to 20% especially with the outbreak of the current pandemic. The reason that many people
+                are unable to feed themselves is due to being financially affected.
+                <br><br>
+                In this case, I saw a link between both problems and came forward with a food rescue organisation called
+                ‘Occasion’. The organisation intends to work with New Zealand restaurants and cafes to reduce food waste
+                and food insecurity by feeding the poor so edible food does not end up as waste. Occasion is different
+                from other similar existing organisations because while we involve restaurants and cafes, we also give
+                customers the opportunity to participate in the movement, making it more meaningful for everyone.
+                <br><br>
+                To educate people about Occasion, I have created a set of advertising posters, an infographic poster and
+                postcards, a table flip booklet, and an order form. Stickers and gift tags were also created to enhance
+                and support the branding of Occasion.
+            </p>
+
+            <h2>Occasion</h2>
+
+            <img src="../images/posters/m_ooi_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

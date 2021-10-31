@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="N">Zac Holley</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                    <li>Minor in <span>Media Design</span></li>
+                </ul>
+                <button><a href="https://zacholleydesign.com">Portfolio Link</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hello! I am Zac Holley, and I will graduate with a Bachelor of Design majoring in Communication Design
+                and minoring in Media Design at the end of this year. I have always had a passion for design and art and
+                am happy to have been able to explore that at The University of Waikato.
+            </p>
+
+            <p>
+                I was always interested in art and other creative outlets growing up, but it wasn’t until I came to
+                Waikato that I understood it could be a potential career path for me. Through studying, I’ve been able
+                to figure out who I am as a designer and what design looks like for me. I’ve been able to find my own
+                style when it comes to design, realising I enjoy and excel in poster design and branding. Studying
+                design at Waikato has allowed me to turn an interest into a skill and I am excited to see where that
+                leads to from here.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>Just in Auckland animal shelters alone, almost eight dogs a day are being euthanised due to a lack of
+                space and dogs being deemed “unadoptable.” This project is based around a service that allows people to
+                sponsor dogs that are in these shelters until they find a new home. These sponsors would help to fund
+                shelters so that they can provide the proper care, have the facilities to hold more dogs, and
+                rehabilitate those who are currently “unadoptable.”
+                <br><br>
+                As part of this service, sponsors will get to choose a shelter dog to watch over. A sponsor for one of
+                these dogs gets a welcome package with photos of the dog and information about them, an Underdogs
+                t-shirt, and an assortment of stickers, all in a box that doubles as a package to send back to the dog
+                they are sponsoring. Sponsors can fill the box with toys and treats for their sponsored dog and the
+                other dogs at the shelter. Each sponsor is also updated with their dog's progress at the shelter and
+                when they get adopted, to make the journey feel special between them and their sponsored dog. The aim of
+                the service is to reduce the number of dogs that are being put down in these shelters and give them a
+                better chance of finding a home and a family.
+
+            </p>
+
+            <h2>Underdogs</h2>
+
+            <img src="../images/posters/z_holley_1080.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

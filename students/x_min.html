@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="F">Xinyu Min</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Interface Design</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hi! My name is Xinyu Min and I’ll soon graduate with a Bachelor of Design majoring in Interface Design.
+                Ever since I was little, I have found arts and design very appealing and enjoyable. With a huge passion
+                in photography, illustration, and graphic design, I’d like to pursue a career in the design field in the
+                future.
+            </p>
+
+            <p>
+                What attracts me the most about design is the ability to create and innovate. I always feel proud when I
+                turn my thoughts into reality. It brings me a sense of achievement whenever I have expressed my unique
+                ideas through my designs. During my time at The University of Waikato, I have gained a lot of
+                design-related knowledge, which I believe has built a good foundation for my future career.
+                Specifically, I have pursued my interest in UI/UX design, branding, publication, illustration,
+                photography, and video production.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>Nowadays, with the strong development in technology and rapid growth in the economy, our lifestyle has become more abundant and a greater variety of entertainment has become available to us. However, as a result of the rapid technology evolution, there has been a lack of recognition in traditional skills and intangible culture inheritance. Some performing arts and folk customs have also been abandoned.
+                <br><br>
+                Although there is an increased awareness and recognition of intangible culture heritage in China, there are still some inevitable problems faced by this society, such as the ageing of existing inheritors and the lack of new inheritors. Therefore, some cultural heritages seem to be disappearing.
+                <br><br>
+                Our project is called ‘SINO LINK’. The aim of the project is to increase people’s awareness of traditional cultural heritage, through an interactive dissemination of mobile apps and websites, in the way of "Internet + Intangible cultural Heritage".
+                <br><br>
+                My role is to produce an application for the project. The "SINO LINK APP" aims to promote intangible cultural heritage through learning, sharing, and trading. Through the platform, users can share information about intangible cultural heritage that they are interested in with each other. At the same time, they can purchase a side-line range of products and enrol in traditional skills learning courses and access more intangible cultural heritage-related information. I am also responsible for designing posters and the side-line range of products for the project, such as stamps and canvas bags, to further promote our project. 
+                <br><br>
+                Through the use of "SINO LINK", we hope more people of the younger generation will start to appreciate the beauty of culture and contribute to the development of cultural inheritance.                
+            </p>
+
+            <h2>SINO LINK</h2>
+
+            <img src="../images/posters/x_Min_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="Y">Matengaro Farrar</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                    <li>Minor in <span>Marketing</span></li>
+                </ul>
+                <button><a href="https://ezravette.myportfolio.com">Portfolio Link</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Chur! My name is Matengaro Farrar or Ngaro for short. I hail from a small town called Ōpōtiki on the east
+                coast. I’m currently working towards my Bachelor of Design majoring in Media Design with potential of
+                further studies. I have always practiced traditional art and since starting at The University of
+                Waikato, I have realised the breadth and possibilities that a digital medium can provide.
+            </p>
+
+            <p>
+                I have always had an affinity for creative pursuits no matter what form it took. And in my time at
+                Waikato, I have gained and refined many skills and rekindled a passion and appreciation to explore my
+                own culture, discovering new ways I can fuse the two worlds of modern design and traditional Māori toi.
+                I have found that through the years of study a new passion to work alongside and with more of my culture
+                and its people.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>In today’s social, political and cultural climate we see more and more appreciation and action for
+                Māoridom. With the progress already in motion I hope to enable and develop a new appreciation and love
+                for our ātaahua ahurea, beautiful culture. Not just for myself, but in an attempt to unify all those
+                that are willing to explore.
+            </p>
+
+            <p>
+                I aimed to do this by creating a series of works that span from many different categories within the
+                media and design worlds such as videography, poster design and concept art to both challenge myself and
+                discover how adaptive our culture can be. Each piece tells its own story of importance to the history of
+                Māoritanga yet displays how bright the future of it can be. All in the hopes of encouraging others to
+                take those steps into Maoritanga and what the future might be for it.
+            </p>
+
+            <h2>Matauranga Māori</h2>
+
+            <img src="../images/posters/m_farrar_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

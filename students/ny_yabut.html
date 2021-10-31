@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="I">Nina Yllor Yabut</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Double Major in <span>Media Design</span> & <span>Communication Design</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hello! I am Nina Yllor Yabut and I will soon graduate with a Bachelor of Design majoring in Media Design
+                and Communication Design. I have been passionate about creating things using my hands such as designing
+                and The University of Waikato was the perfect place to strive and gain more experience to prepare myself
+                working in the industry.
+            </p>
+
+            <p>
+                Design is a part of everything we do. Since I was young I’ve been loving drawing, painting, designing
+                and being creative in general. As an adult, I still have the passion of being creative so I decided to
+                study design and go for it. During my time at Waikato I found that my areas of interest are in the lines
+                of branding, illustration and animation. Waikato has also helped me build more knowledge and experience
+                about design, to be more creative. It’s not just designing but also expanding your thinking, growing
+                ideas and finding solutions as well. I want to pursue my passion for branding, illustration and
+                animations in my future career.
+
+            </p>
+
+            <h2>project description</h2>
+
+            <p>
+                People who are coffee lovers all know that roasted coffee has side effects such as coffee jitters,
+                heartburn, anxiety and other potential side effects and some people cannot drink coffee because of it.
+                <br><br>
+                Green Coffee is rich with chlorogenic acid. This chlorogenic acid has tons of health benefits such as
+                reducing high blood pressure, blood vessels and weight loss. Chlorogenic acid in green coffee is thought
+                to affect how the body handles blood sugar and metabolism. Many people might not know that before the
+                coffee is roasted, it is green coffee. Once roasted it loses its chlorogenic acid due to the roasting
+                process, so my project solution is to create a green coffee drink that will have an equivalent taste to
+                roasted coffee without the roasting process and adding different powerful ingredients that will enhance
+                the benefits of green coffee.
+                <br><br>
+                Green coffee is not actually known in New Zealand, so my project is about promoting ‘Green Coffee’ as an
+                alternative to roasted coffee by showing the health benefits of choosing this product.
+
+            </p>
+
+            <h2>Green Coffee</h2>
+
+            <img src="../images/posters/ny_yabut_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

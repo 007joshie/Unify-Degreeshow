@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="U">Jordon Donovan</h1>
+                <ul>
+                    <li><span>Graduate Diploma of Teaching (Secondary)</span></li>
+                    <li><span>Diploma of Science (Engineering)</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Kia Ora, I am Jordon Donovan and I will soon graduate as a secondary school teacher specialising in hard
+                materials technology. I have an interest in all things mechanical and prior to my studies at The
+                University of Waikato I was a trade qualified fitter and turner.
+            </p>
+
+            <p>
+                Although design is not a passion of mine, I have developed an interest in the history, techniques and
+                technology utilised in the world of design while engaging with the design papers I have completed at
+                Waikato. Throughout my trade, there were multiple instances where I would interact with products and
+                components in the manufacture, maintenance, or repair stage of their life cycle with little regard to
+                the investment of time that a designer or design team has put in to refine it to a functional item.
+                Through design study, it has been highly interesting looking at the world through a new lens of
+                conception, function, development, and refinement.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>The Vert Vege project is aimed at designing a low-cost garden utilising an Industrial design perspective.
+                The Vert Vege grow unit is a vertical tiered garden that aims to provide prospective gardeners the
+                ability to engage with domestic gardening at a low price point. Current garden units that are
+                commercially available are frequently short lifespan products that perish easily in the outdoors or are
+                too highly priced for the average domestic gardener to justify the investment. Additionally, current
+                garden products at both ends of the financial spectrum are typically made from environmentally
+                unsustainable materials. The intention of Vert Vege is to produce a garden unit that is durable yet
+                environmentally conscious. A Vert Vege unit has a minimalistic number of components for easy, low-cost
+                manufacture. The unit is intended to be an easily assembled and deconstructed product that can be moved
+                from location to location, while leaving little to no environmental impact after use.
+            </p>
+
+            <p>
+                CAD modelling has been a primary tool used in the development and refinement of the project and it was
+                intended that a 1:1 scale model be created from foam or cardboard to aid visualization and functional
+                attributes of the product. Unfortunately, this has been hindered by the pandemic and alert level
+                fluctuations this trimester.
+            </p>
+
+            <h2>Vert Vege</h2>
+
+            <img src="../images/posters/J_Donovan_1080p.jpeg.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="U">Sam Goh</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Media Design</span></li>
+                    <li>Minor in <span>Illustration</span></li>
+                </ul>
+                <button><a href="https://www.facebook.com/sammy.artlove">Facebook</a></button>
+                <button><a href="https://www.artstation.com/sammyartlove">Artstation</a></button>
+                <button><a href="https://www.instagram.com/sammy.artlove/">Instagram</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hello! My name is Kae Shiann Goh, known as Sam as well. A year ago, I decided to continue my stay in New
+                Zealand and further my education by studying Media Design (Graduate Diploma) at The University of
+                Waikato. I am a concept artist, illustrator, and designer.
+            </p>
+
+            <p>
+                Ever since I was young, I have been really interested in art and design. At first, I thought of it as a
+                hobby, an expression of emotion to draw, create, and design something from scratch. I used to work in an
+                animation company before further study. Other than that, I have always been interested in creating short
+                videos too, to be able to tell a story. Storytelling is really something I am interested in but afraid
+                to venture into. I always think that maybe I am not good enough, my idea might not be accepted, or maybe
+                I am just afraid to get rejected. Even though all those thoughts came to my mind, I still took the
+                courage to step out of my comfort zone, hence I chose to study art and design and start from the bottom.
+                I wish to tell people stories that are able to touch their heart. I crave for a good story with a good
+                message in it that is able to pass on year after year, because one day, our future generations will look
+                back, and use our art and design, our stories as an inspiration for their study material.
+
+            </p>
+
+            <h2>project description</h2>
+
+            <p>This project is to design a solution for people to deal with their emotional state. They will learn to
+                embrace their feelings and thus control them. All of us are living in this society, having busy lives,
+                working every day, every hour. Once in a while we should play some games to help ourselves relax and
+                de-stress. This game design – ‘AEONS’ that I will be creating is full of meaningful ideas; it closely
+                relates to our daily lives. As we enter the game and explore, it will help us understand ourselves
+                better and know that it is inter-connected.
+            </p>
+
+            <p>
+                ‘AEONS’ is designed for young adults in the age group of 13 to 29. They are at the age of stepping into
+                the adult world, the society, not knowing anything, but trying their best to learn and adapt. However,
+                they often get bullied by the work culture, feeling depressed and lost. ‘‘AEONS’ will bring people hope,
+                aspiring to create more positive energy in people who play it. Besides that, everyone deserves to rest.
+                The purpose is to give people a chance to be someone better, give them a chance to have an alternate
+                life; no one is ever alone, there will always be someone with you.
+            </p>
+
+            <p>
+                The main difference about AEONS compared to other games is the concept and the back story, it connects
+                and relates to people who need emotional healing. In the past, games have always been about color,
+                design and excitement, the game design that is being created here is much more than that. The story, the
+                challenge, and the suspenseful moments of each chapter, it brings you to another level of excitement.
+            </p>
+
+            <h2>AEONS</h2>
+
+            <img src="../images/posters/k_goh_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

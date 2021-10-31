@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="U">Julian Dela Cruz</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Double Major in <span>Communication Design & Media Design</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Kumusta! I am Julian Dela Cruz. I am a final-year student soon to graduate with a Bachelor of Design
+                double majoring in Communication Design and Media Design. I am excited to get into the real world and
+                apply the skills that I have learned throughout my journey here at The University of Waikato.
+            </p>
+
+            <p>
+                Ever since I was a child, I have always been into art. I do painting, sketching, calligraphy and video
+                editing as a hobby. I’ve always wanted to be in the creative field and I knew that I wanted that for my
+                career as well. I see Design as an art form where I could show and express my creativity. That is why I
+                chose to study Design in order to pursue my passion for art. Luckily, the Waikato offered both
+                Communication Design and Media Design, both majors that I was really interested in. When I first studied
+                Design, I didn’t know how to use Adobe softwares such as Illustrator, Photoshop, and InDesign. Studying
+                here at the University of Waikato has taught me a lot about design and the skills that I am capable of,
+                as well as building my confidence. It also gave me a lot of opportunities and helped me grow as a
+                designer and as the person that I am today. During my time at Waikato, I have learned that my areas of
+                interest are branding, illustrating, print design, and motion graphics.
+
+            </p>
+
+            <h2>project description</h2>
+
+            <p>While the rest of the world sees us as clean and green, we have significant problems in New Zealand.
+                Every year, New Zealand discards 15.5 million tonnes of waste. That is 3,200kg for every kiwi! But
+                behind New Zealand’s clean and green image is a dirty truth — its freshwater rivers are among the most
+                polluted in the developed world. About 60% of the country's rivers are polluted beyond tolerable levels,
+                with 95 to 99 percent of rivers in pastoral, urban, and non-native forested areas contaminated. That is
+                why I have created an organisation called “Thrive”.
+            </p>
+
+            <p>
+                “Thrive” is a clean-up organisation that addresses the problem of pollution and waste where anyone could
+                volunteer and help clean up different areas or locations. It could help unite community groups, schools,
+                businesses, local governments, and individuals. “Thrive” was also made to promote family time and to
+                educate children about the environment from an early age because children can influence older people to
+                make a change, since children are a catalyst for change.
+            </p>
+
+            <p>
+                I designed a poster to promote the clean-up event and the organisation. I've also created an educational
+                children's book titled "How We Can Help the Earth" as well as several deliverables such as postcards
+                that includes the different activities that the children can participate in and collect throughout the
+                event. Bookmarks and stickers were also made to hand out to people to encourage them to support
+                "Thrive".
+                <br> <br>
+                A clean-up organisation on how we can help the earth THRIVE.
+            </p>
+            
+
+            <h2>Thrive</h2>
+
+            <img src="../images/posters/j_delacruz_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

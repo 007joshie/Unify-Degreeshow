@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="Y">Walla' Altounesi</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Double Major in <span>Media Design</span>& <span>Interface Design</span></li>
+                </ul>
+                <button><a href="https://ezravette.myportfolio.com">Portfolio Link</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Kia Ora, My name is Walla' Altounesi, and I am a third-year Bachelor of Design student, double majoring
+                in Media Design and Interface Design. I will be graduating this year and hope to begin work in the
+                Design industry, putting the skills I have learned at The University of Waikato to good use.
+                <br><br>
+                I have a Diploma from Jordan, and I used to be a graphic designer there. I came to New Zealand in 2011
+                as an immigrant, but I needed to learn English, so I worked hard and tried my best to learn English and
+                integrate into New Zealand society. I discovered that language is the basis for communication and
+                understanding any people’s culture; incredibly, I discovered that New Zealand is multicultural. I have
+                worked in the creative industry since 2009 when I was in Jordan. I was also studying from 2008.
+                <br><br>
+                When I came here, I decided to complete my study, and I enjoyed all areas of design. I have chosen Media
+                design and Interface design because in Jordan I had already taken communication. I liked coding, even
+                though it was hard for me, and I did not get any help. I gained more skills and knowledge by doing the
+                projects because we had to memorize information in Jordan, and practical work was limited. In addition,
+                I am a teacher aide at a primary school, and I
+                work with ESOL kids all the time.
+                <br><br>
+                I got the chance to gain the necessary skills and learned a lot by completing many design projects. I
+                love when I design and create different types of projects because I am a visual person. I enjoy learning
+                about many programs and solving problems. I also enjoy working, gaining more experience and expertise
+                with my lecturers and classmates.
+                I know that Waikato has been a great help because it has many subjects in Graphic Design, enabling me to
+                have more skills. Waikato has helped me focus this passion for design in distinct areas and acquire the
+                necessary skills. In addition, Waikato has given me so many great opportunities to link European and
+                Arabic designs to help a greater range of people in New Zealand.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>
+                New Zealand receives many people as refugees each year and does its best to help resettle them here.
+                However, some people have limited English or are non-English speakers. This makes it difficult for the
+                kids to adopt, speak, and communicate with adults and children at their school.
+                <br><br>
+                Creating an app to help them learn English, communicate with other children, make friends, explain what
+                they want, how they feel, and understand the Kiwi way of speaking will help them settle and adapt to New
+                Zealand more easily and enjoy school time. It could also make their time in mainstream classes more
+                productive, so, I focused my app on what I have seen that the kids need every day at school.
+                <br><br>
+                I found during this project one sentence can be responded to in many different ways, even though it has
+                the same meaning. Children can be stuck in one response that they are familiar with, limiting their
+                interactions. So, I have added the pop-up screen for more options when asked a question with some
+                appropriate responses in the Kiwi way of speaking. The NZ Learners app would help students to improve
+                their English and communicate with Kiwis.
+
+            </p>
+
+            <h2>NZ Learners app</h2>
+
+            <img src="../images/posters/w_altounesi_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="U">Steven Odendaal</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Interface Design</span></li>
+                    <li>Minor in <span>Computer Science</span></li>
+                </ul>
+                <button><a href="https://ezravette.myportfolio.com">Portfolio Link</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hey! I’m Steven Odendaal and I will be graduating with a Bachelor of Design majoring in Interface Design
+                and minoring in Computer Science. I have always loved design and technology from a very young age and
+                found it all extremely fascinating and something that I will be enjoying everyday of my life in my line
+                of work.
+            </p>
+
+            <p>
+                I have loved design and art from a very young age, but also found myself loving technology and
+                developing applications and programs. I knew I had a passion and deep interest in all things creative
+                and knew that it would be the career I would pursue one day. I moved to New Zealand 3 years ago to
+                further my life goals, so I studied here at The University of Waikato where I knew that I would be able
+                to satisfy all my creative needs, gaining a Degree in Design and still minoring in Computer Science. I
+                have seen myself develop and evolve my creativity here at Waikato from day one and I am grateful to get
+                all the support and wisdom from all my lectures and peers.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>
+                I set out to find ways to help improve people’s fitness and help with their overall health and mental
+                well-being, I knew this would be the perfect challenge as kids and adults suffer very frequently from
+                some form of mental health related issue in their lifetime and a great way to combat these mental-health
+                issues is to do a form of exercise or physical activity but many find it difficult and challenging to
+                keep to an exercise routine for a long period of time.
+            </p>
+
+            <p>
+                So, I created an app called FitQ, this is no ordinary fitness tracking app that you could easily
+                download and leave sitting in your home screen for years without using, this is an App that rewards you
+                based on your performance where you can earn an in app only currency that can be redeemed at your
+                favourite stores that would part take with FitQ, for example, Countdown or Rebel Sport Vouchers etc.
+                This app isn’t just for active gym goers, but also for those that prefer to partake in any form of
+                physical recreational activity, the App is beneficial to people of all ages. Rewards can be earned via
+                steps, calorie burning or long-distance training such as cycling.
+                This app is not only developed to be on your phone but to be on any smart watch device as well, which
+                can unlock more reward features as you would have it with you more frequently throughout your
+                activities. FitQ would be the perfect app to encourage individuals to live a healthier lifestyle and be
+                rewarded for it.
+
+            </p>
+
+            <h2>FitQ</h2>
+
+            <img src="../images/posters/S_Odendaal_1080.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

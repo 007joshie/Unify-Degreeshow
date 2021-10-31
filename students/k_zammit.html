@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="I">Karlos Zammit</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hello, my name is Karlos Zammit and I will be graduating this year with a Bachelor of Design. The last
+                three years of my studies here at The University of Waikato I have learnt a tremendous amount and have
+                been a part of such an amazing group of designers.
+            </p>
+
+            <p>
+                Throughout college I never really thought about the importance of design and never really knew what was
+                involved. I always associated design with art or drawing. Once I realised what went into design and how
+                important it is, then I got hooked. Design is in everything and the opportunity to be as creative as
+                possible really makes it an enjoyable career. The past three years studying here at Waikato have taught
+                me a lot, I have learnt how to manage my time efficiently, I have also developed a wide range of skills
+                in design. My passion for UX/UI design has grown tremendously..
+            </p>
+
+            <h2>project description</h2>
+
+            <p>
+                Looking after your health is important, but it seems that New Zealanders are not that educated in how to
+                do so, nor do they know what is inside the foods they are eating. One in every three New Zealander’s are
+                obese, this is quite a concerning number although it can be reduced by changing two important factors in
+                peoples lives. Diet and exercise.
+                <br><br>
+                Through “Summit Health & Fitness” I have created an app that allows users to track their food, track
+                their exercise, create, and browse different food menus that will help them with their personal goals.
+                Making people more aware about their fitness choices is the goal, having someone think about what they
+                are about to eat or what kind of exercise they will be doing for the day instinctively- this is the
+                outcome I’m wanting. I have also created a series of three posters that promote the “Summit Health &
+                Fitness” app.
+
+            </p>
+
+            <h2>Summit Health & Fitness</h2>
+
+            <img src="../images/posters/k_zammit_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

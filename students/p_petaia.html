@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="Y">Philip Petaia</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                </ul>
+                <button><a
+                        href="https://www.facebook.com/profile.php?id=100073929034839">dontsugarcoatmyreality</a></button>
+                <button><a href="https://www.instagram.com/dontsugarcoatmyreality/">@dontsugarcoatmyreality</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hi, my name is Philip. I am currently in the final year of my Diploma in Design. I have always been
+                passionate about the crazy fleurs and the freedom of art and knew I wanted a job in the creative
+                industry. Studying painting and sculpture throughout high school helped me to pursue a career in design
+                here at The University of Waikato.
+            </p>
+
+            <p>
+                Since starting my tertiary study, the diploma allowed me to explore different subjects of design, from
+                web design, society, culture and media, info vis, branding, design thinking and now to my
+                portfolio/capstone. It is important for me to know how design is evolving in the future to advocate and
+                engage with the people of society. We have the power and the responsibility to create a visual
+                representation of things that are important and will lead to a different perspective on the world.
+                As a designer, I will educate and preserve the knowledge that will keep us evolving and growing.
+
+            </p>
+
+            <h2>project description</h2>
+
+            <p>As a starting point, I would like to explore how we communicate with youth in our community when it comes
+                to mental health issues, as well as the support for mental health support systems within schools,
+                churches, or workplaces:
+                <br><br>
+                Specifically, I would like to target this research toward young Polynesian males' mental health in
+                general since they tend to be more affected as they mature, while also exploring all genders,
+                specifically youth and young adults. Mental health is a problem, especially in New Zealand.
+                <br><br>
+                Through this project, I hope to raise awareness about the concerns of avoiding hidden stories of our
+                mental health. Helping people better understand how oppression contributes to suicide and depression. By
+                supporting these causes, we acknowledge that their story existed then and still exists today. To bring
+                about positive change, we need to give ourselves a chance to do better and be better for our community.
+                <br><br>
+                We didn't know then, but now we do.
+
+            </p>
+
+            <h2>Don’t sugarcoat my reality</h2>
+
+            <img src="../images/posters/p_petaia_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

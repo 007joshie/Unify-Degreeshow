@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="Y">Yuanbi Li</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Communication Design</span></li>
+                </ul>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>
+                Hello! I am Yuanbi Li and I will soon graduate with a Bachelor of Design majoring in Communication
+                Design. Studying design has had a significant impact on my life. Perhaps influenced by my father's hobby
+                of photography and my mother's hobby of philately, I have been interested in visual communication since
+                I was a child. The University of Waikato has been a good place for me to learn and expand my interest
+                while striving for my dreams.
+
+            </p>
+
+            <p>
+                Before I entered university, I had never had a systematic understanding of design. I just simply equated
+                it with art. During these three years of study, I have gained a lot of theoretical knowledge of design
+                concepts and many design techniques. At the same time, many opportunities helped me develop into who I
+                am today. During this process, I found that I was most interested in print media and branding. At the
+                same time, I also maintain my interest in UX, UI and website design.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>As per the NZ Crime and Victim Survey 2018, over 900,000 individuals (23% of adults) have experienced an
+                incident of sexual abuse, with 71% of these being female and one in three girls may be sexually abused
+                before the age of 16. It is estimated that only one in every hundred incidents are reported and only 3%
+                of those make it to court. Many people do not realise that crimes committed by acquaintances account for
+                the highest proportion of these. I hope that by reading this brochure, people will develop an increased
+                awareness and take steps to keep themselves safe. It is hoped that the brochure will help reduce the
+                occurrence of such incidents. At the same time, I hope more people can understand the #metoo movement
+                and the stories of those who survived.
+            </p>
+
+            <h2>Devil is by our side</h2>
+
+            <img src="../images/posters/y_li.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

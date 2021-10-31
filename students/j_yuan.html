@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="U">Jiaying Yuan</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Interface Design</span></li>
+                </ul>
+                <button><a href="https://graceyuan639.wixsite.com/gracewebsite">Portfolio</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hello! I'm Jiaying Yuan, I'm going to graduate, majoring in Interface Design and I will have a bachelor's
+                degree in design. I've always been passionate about design and The University of Waikato is the perfect
+                place for me to pursue my dreams.
+            </p>
+
+            <p>
+                I used to think that design is a very special profession that requires a lot of natural talent. Later,
+                through designing jewelry, I realised that I was actually interested in design, even had a passion for
+                design and how it works. I knew then that design was what I wanted to do. During my time at Waikato, I
+                learned many necessary skills, gained knowledge and had access to many opportunities that have helped me
+                grow into the person I am today. I found that I was interested in brand, graphic design and application
+                user experience design, video design. Waikato has also helped me pursue my passion for 3D design and now
+                I have started my own jewellery studio.
+            </p>
+
+            <h2>SINO LINK</h2>
+
+            <p>China's intangible cultural heritage shows Chinese culture in different ways and from different angles,
+                attracting tourists from all over the world who have a keen interest in Chinese culture. But with the
+                development of science and technology, more and more people are more interested in new things and are
+                forgetting the old things, leading to less and less people interested in non-material cultural heritage
+                and it is declining. Already some aspects of intangible culture inheritance have disappeared due to a
+                lack of new inheritors. Therefore, my partner and I have come up with an idea to let more tourists at
+                home and abroad learn about Chinese culture and the production of China's intangible cultural heritage.
+                We decided to do this through technology-based and data-based communication, creating ‘Sino Link’. This
+                is an APP that provides users with the ability to learn about the history of Intangible cultural
+                heritage by USING VR, purchase goods, or make an appointment to learn and create. The website presents a
+                number of intangible cultural heritage events in different parts of China, allowing people who are
+                interested to find information about them.
+
+            </p>
+            <p>
+                Through "SINO LINK", in addition to the APP and Website, we also created a series of posters, promo
+                Items and a Logo to promote Traditional Chinese culture and spread China's intangible cultural heritage
+                around the world. I also made business cards and other ancillary materials to further support our
+                campaign.
+                We will use the power of social media to further support my message. Through Instagram and Facebook, we
+                will promote the voice of "Traditional Chinese culture" and let more people know the essence of China's
+                intangible cultural heritage.
+
+            </p>
+            <h2>It Breathes</h2>
+
+            <img src="../images/posters/j_yuan.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>

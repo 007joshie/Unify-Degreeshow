@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/students.html">students</a></li>
+                <li><a href="../pages/projects.html">projects</a></li>
+                <li><a data-scroll href="#footer">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+
+            <div class="profile-bar">
+                <td>
+                    <div class="img-container">
+                        <img class="top" src="../images/salma.png" alt="">
+                        <img class="bottom" src="../images/salma-hover.png" alt="">
+                    </div>
+                </td>
+
+                <h1 id="full-name" data-letter="I">Chloe Chooi</h1>
+                <ul>
+                    <li><span>Bachelor of Design</span></li>
+                    <li>Major in <span>Interface Design</span></li>
+                </ul>
+                <button><a href="https://chloechooi.myportfolio.com/">Portfolio Link</a></button>
+            </div>
+
+            <h2>biography</h2>
+
+            <p>Hello! My name is Chloe Chooi and I will be graduating with a Graduate Diploma in Interface Design. As a
+                previous Bachelor of Arts Graduate in Linguistics, I come to design with an understanding of culture and
+                research. To create meaningful impact through functional design is an aspiration I find exciting and
+                fulfilling. The University of Waikato has been a great place to learn, collaborate and express my
+                creativity through design projects.
+            </p>
+
+            <p>
+                I enrolled in the Graduate Diploma with the intention of pursuing UX Design as a career. Although
+                initially I had hopes of becoming a Foreign English Language Teacher, I discovered a passion for
+                creative and critical thinking through many group projects in my Linguistics degree. I imagined that
+                this passion was unlikely to play out in a primary classroom, so I came back to pursue Interface Design
+                as opposed to a teaching qualification. During this year, I have learnt and applied the principles of
+                design to interface-based projects. I am also grateful to work with amazing, talented design students
+                and explore other streams of design.
+            </p>
+
+            <h2>project description</h2>
+
+            <p>
+                According to the 2019 NZQA report, students gaining University Entrance (UE) has been stagnating around
+                50% for the last decade (2010-2019). Although this project was initially based on the problem of early
+                high school leavers and the negative consequences that follow, I believe that there are many factors
+                contributing to students not pursuing higher education.
+                <br><br>
+                As it would be unfair to see the lack of pursuit in higher education as a problem, Future U stems from
+                the lens of opportunity rather than being a solution to a problem. Future U is a mobile application that
+                seeks to emphasise opportunities higher education can bring and encourage NCEA-attaining students to be
+                more future-oriented.
+                <br><br>
+                This platform is targeted towards students entering their NCEA or senior high school years. Through
+                Future U, students can have more choice over their NCEA subjects by seeing options offered by
+                correspondence outside of their local school. Students can explore NCEA scholarships and potentially
+                other scholarships from universities both in New Zealand and overseas. Students can interact with the
+                platform by setting goals, tracking habits and personal NCEA progress. They can also support friends in
+                their goals and habits on the app.
+                <br><br>
+                I believe providing easier access for students to explore education opportunities can encourage
+                purposeful learning and future career journeys.
+            </p>
+
+            <h2>Future U – Emphasising opportunities within higher education at NCEA level</h2>
+
+            <img src="../images/posters/c_chooi_1080p.jpg" width="100%" height="100%">
+
+            <!--<video controls src="" poster="">-->
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="content-label">
+                <br><br><br><br>
+                <img src="../images/UoW-white.png" alt="">
+            </div>
+
+            <span class="white-text">
+                <h2>For more information contact us</h2>
+                <p>
+                    Email: &nbsp;
+                    <a href="mailto:degreeshow@waikato.ac.nz">degreeshow@waikato.ac.nz</a>
+                </p>
+
+                <p>
+                    Faculty phone: &nbsp;
+                    <a href="tel:0800924528">0800 924 528</a>
+                </p>
+
+                <p>
+                    Faculty information: &nbsp;
+                    <a href="http://www.cs.waikato.ac.nz/cgd" target="_blank">cs.waikato.ac.nz</a>
+                </p>
+
+            </span>
+        </div>
+    </main>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/students.html">STUDENTS</a></li>
+            <li><a href="../pages/projects.html">PROJECTS</a></li>
+            <img src="../images/sidebar-logo.svg" class="sidebar-logo" alt="">
+        </ul>
+    </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        const data = document.getElementById("full-name")
+        var letter = data.dataset.letter;
+
+        let root = document.documentElement;
+        if (letter == "U") {
+            root.style.setProperty('--accent-color', "#E01665");
+        }
+        if (letter == "N") {
+            root.style.setProperty('--accent-color', "#F16634");
+        }
+        if (letter == "I") {
+            root.style.setProperty('--accent-color', "#FCB915");
+        }
+        if (letter == "F") {
+            root.style.setProperty('--accent-color', "#B1DDE0");
+        }
+        if (letter == "Y") {
+            root.style.setProperty('--accent-color', "#0085C9");
+        }
+    </script>
+</body>
+
+</html>
