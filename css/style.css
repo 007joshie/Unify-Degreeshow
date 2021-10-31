@@ -431,7 +431,7 @@ iframe {
 .project {
     width: 100%;
     padding-top: 1.5em;
-    
+    min-height: 200px;
 }
 
 
